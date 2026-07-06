@@ -17,7 +17,6 @@ import os
 # Alt klasordeki app.py dosyasinin ust klasorleri gorebilmesi icin pusula ekliyoruz
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import io
-import os
 import tempfile
 
 import numpy as np
@@ -25,10 +24,14 @@ import pandas as pd
 import requests
 import streamlit as st
 import urllib3
+import importlib
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-from sales_forecasting(zey).data_generator import generate_synthetic_data  # noqa: F401 (optional use)
+# --- PARANTEZLI KLASÖR ENGELINI AŞAN DİNAMİK IMPORT SİSTEMİ ---
+data_gen_module = importlib.import_module("sales_forecasting(zey).data_generator")
+generate_synthetic_data = data_gen_module.generate_synthetic_data
+
 from src.models import (
     PROPHET_AVAILABLE,
     LinearRegressionWrapper,
@@ -100,7 +103,6 @@ def sanity_check_predictions(preds, hist_max, model_name):
         st.sidebar.warning(f"{model_name} predictions came out too high, they were capped.")
     if preds.max() < hist_max * 0.01:
         st.sidebar.warning(f"{model_name} predictions came out too low, they were capped.")
-    # Ensure rounded integers for physical units like air conditioners
     return np.round(np.clip(preds, 0, hist_max * 3)).astype(int)
 
 
@@ -250,7 +252,6 @@ def load_and_preprocess_sales(df_raw, split_year=2025):
 
     df["sales"] = df.apply(fill_val, axis=1)
 
-    # Force whole integer values across historic performance logs
     df["sales"] = np.round(df["sales"]).astype(int)
     return df.sort_values("date")[["date", "sales"]], int(anomalies.sum()), n_bad_dates
 
@@ -285,7 +286,6 @@ st.html(f"""
     </style>
 """)
 
-# --- SIDEBAR CONFIGURATION ---
 with st.sidebar:
     st.markdown("### Configuration")
 
@@ -306,16 +306,13 @@ with st.sidebar:
     st.markdown("##")
     run_button = st.button("Run Forecast Pipeline", type="primary", use_container_width=True)
 
-# --- MAIN PAGE DASHBOARD HEADER ---
 st.markdown(f"<h1 style='color:{BRAND_RED}; font-weight:800; margin-bottom:0;'>Sales Forecast Dashboard</h1>",
             unsafe_allow_html=True)
 st.markdown("<div class='corporate-line'></div>", unsafe_allow_html=True)
 
-# --- INITIAL FILE UPLOAD HANDLING & TEMPLATE CONSOLE (MAIN AREA) ---
 if "data_loaded" not in st.session_state:
     st.session_state["data_loaded"] = False
 
-# Analytical SVG Graphic to nicely occupy whitespace
 st.markdown(
     "<div style='text-align: center; margin: 20px 0 10px 0;'>"
     "<svg width='80' height='80' viewBox='0 0 24 24' fill='none' stroke='#8B0000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'>"
@@ -329,14 +326,12 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# --- REQUIRED DATA FORMAT EXPANDER (INTEGER METRICS) ---
 with st.expander("📊 Required Excel Data Format & Template", expanded=True):
     st.markdown(
         "To ensure proper pipeline operation, data must be structured **monthly (not daily)**. "
         "Sales metrics must represent absolute unit volumes (integers) without decimal points."
     )
 
-    # Pure discrete unit figures for real air conditioning unit simulations
     mock_data = pd.DataFrame({
         "Year": [2024, 2024, 2024, 2025],
         "Month": [10, 11, 12, 1],
@@ -477,7 +472,6 @@ with st.status("Initializing Pipeline Components...", expanded=True) as status:
             current_noise = 0.7 * current_noise + np.random.normal(0, hist_std * 0.03)
             noise[t] = current_noise
 
-        # Double clamp ensuring forecasts remain absolute positive physical integer items
         safe_preds = np.round(np.clip(safe_preds + random_walk + noise, 500, hist_max * 3)).astype(int)
         forecasts[scenario] = pd.DataFrame({"Date": df_future["Date"], "Forecast": safe_preds})
 
@@ -488,7 +482,6 @@ with st.status("Initializing Pipeline Components...", expanded=True) as status:
 # ---------------------------------------------------------------------------
 st.markdown("##")
 
-# --- HIGH-LEVEL EXEC CARDS (KPIs) ---
 kpi1, kpi2, kpi3, kpi4 = st.columns(4)
 with kpi1:
     st.metric(label="Top Performing Model", value=best)
@@ -501,7 +494,6 @@ with kpi4:
 
 st.markdown("---")
 
-# --- MULTI-TAB DISPLAY OUTLINE ---
 tab1, tab2, tab3 = st.tabs(["Performance Leaderboard", "Model Validation Fit", "Scenario Forecasting Horizons"])
 
 with tab1:
@@ -510,7 +502,6 @@ with tab1:
     st.dataframe(leaderboard.style.highlight_max(axis=0, subset=['Success Rate (%)'], color='#f5e6e6'),
                  use_container_width=True)
 
-# Generate exact whole unit clean integer values for the validation matrix download
 preds_df_download = preds_df.copy()
 for col in preds_df_download.columns:
     if col != "Date":
@@ -539,7 +530,6 @@ with tab3:
         plot_forecast_scenarios(df_hist, forecasts, best, save_path=path)
         st.image(path, use_container_width=True)
 
-# --- GLOBAL DATA EXPORT CONSOLE ---
 st.markdown("---")
 st.markdown("### Export Executive Report Data")
 st.download_button(
