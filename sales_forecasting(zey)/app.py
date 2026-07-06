@@ -28,7 +28,7 @@ import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-from src.data_generator import generate_synthetic_data  # noqa: F401 (optional use)
+from sales_forecasting(zey).data_generator import generate_synthetic_data  # noqa: F401 (optional use)
 from src.models import (
     PROPHET_AVAILABLE,
     LinearRegressionWrapper,
