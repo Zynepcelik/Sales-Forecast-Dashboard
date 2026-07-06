@@ -25,7 +25,7 @@ jobs:
 
     - name: Exe Dosyasini Olustur
       run: |
-        pyinstaller --onefile --clean --copy-metadata streamlit --collect-all src app.py
+        pyinstaller --onefile --clean --copy-metadata streamlit --paths=. app.pyx 
 
     - name: Exe Dosyasini GitHub'a Yukle
       uses: actions/upload-artifact@v4

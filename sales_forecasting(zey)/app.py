@@ -12,7 +12,11 @@ Install:
 Run:
     streamlit run app.py
 """
+import os
+import sys
 
+# Uygulamanın çalıştığı ana dizini Python'ın arama yollarına ekliyoruz
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 import io
 import os
 import tempfile

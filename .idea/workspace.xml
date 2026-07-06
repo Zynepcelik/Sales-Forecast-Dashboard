@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5db7f898-8f41-4cb7-8ca5-e16ae3ab9c56" name="Changes" comment="pyinstaller komutu sadelestirildi">
       <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales_forecasting(zey)/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/sales_forecasting(zey)/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +101,7 @@
       <workItem from="1783075977832" duration="129000" />
       <workItem from="1783077849299" duration="9661000" />
       <workItem from="1783314229156" duration="604000" />
-      <workItem from="1783314913138" duration="8714000" />
+      <workItem from="1783314913138" duration="9474000" />
     </task>
     <task id="LOCAL-00001" summary="Ilk yukleme">
       <option name="closed" value="true" />
