@@ -1,0 +1,15 @@
+[theme]
+# Şirket Kırmızısı (Butonlar, aktif çizgiler ve vurgular)
+primaryColor = "#E50914"
+
+# Ana Arka Plan (Bembeyaz, temiz bir görünüm)
+backgroundColor = "#FFFFFF"
+
+# Sol Menü Arka Planı (Açık kurumsal gri/beyaz kontrastı)
+secondaryBackgroundColor = "#F8F9FA"
+
+# Yazı Rengi
+textColor = "#212529"
+
+# Font Ailesi
+font = "sans serif"

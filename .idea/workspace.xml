@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5db7f898-8f41-4cb7-8ca5-e16ae3ab9c56" name="Changes" comment="pyinstaller komutu sadelestirildi">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Zynepcelik"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Zynepcelik/Sales-Forecast-Dashboard.git",
+    "accountId": "e7b589e5-be5d-4564-82cc-9ea28cdaaa79"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FtNqjQqCQfcddtfn5kRfPvwoD8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/celikz/Desktop/proje Z/sales_forecasting(zey)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="sales_forecasting(zey)" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sales_forecasting(zey)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sales_forecasting(zey)/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5db7f898-8f41-4cb7-8ca5-e16ae3ab9c56" name="Changes" comment="" />
+      <created>1782890599278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1782890599278</updated>
+      <workItem from="1782890600303" duration="503000" />
+      <workItem from="1782891145618" duration="2141000" />
+      <workItem from="1782899968224" duration="3889000" />
+      <workItem from="1782907785337" duration="14084000" />
+      <workItem from="1782995649604" duration="4987000" />
+      <workItem from="1783055114375" duration="3393000" />
+      <workItem from="1783060507508" duration="6468000" />
+      <workItem from="1783075977832" duration="129000" />
+      <workItem from="1783077849299" duration="9661000" />
+      <workItem from="1783314229156" duration="604000" />
+      <workItem from="1783314913138" duration="8714000" />
+    </task>
+    <task id="LOCAL-00001" summary="Ilk yukleme">
+      <option name="closed" value="true" />
+      <created>1783316934023</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1783316934023</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Exe tetikleyici eklendi">
+      <option name="closed" value="true" />
+      <created>1783317556774</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1783317556774</updated>
+    </task>
+    <task id="LOCAL-00003" summary="v4 guncellemesi">
+      <option name="closed" value="true" />
+      <created>1783318049789</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783318049790</updated>
+    </task>
+    <task id="LOCAL-00004" summary="yol guncellemesi">
+      <option name="closed" value="true" />
+      <created>1783318665007</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1783318665007</updated>
+    </task>
+    <task id="LOCAL-00005" summary="kesin cozum">
+      <option name="closed" value="true" />
+      <created>1783321182326</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1783321182326</updated>
+    </task>
+    <task id="LOCAL-00006" summary="klasor ismi duzeltildi">
+      <option name="closed" value="true" />
+      <created>1783321364417</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1783321364417</updated>
+    </task>
+    <task id="LOCAL-00007" summary="parantez hatasi kokten cozuldu">
+      <option name="closed" value="true" />
+      <created>1783321566017</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1783321566017</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ilk temiz yukleme">
+      <option name="closed" value="true" />
+      <created>1783323618957</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1783323618957</updated>
+    </task>
+    <task id="LOCAL-00009" summary="orijinal yml akisi duzeltildi">
+      <option name="closed" value="true" />
+      <created>1783324467329</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1783324467329</updated>
+    </task>
+    <task id="LOCAL-00010" summary="pyinstaller komutu sadelestirildi">
+      <option name="closed" value="true" />
+      <created>1783324853433</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1783324853433</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ilk yukleme" />
+    <MESSAGE value="Exe tetikleyici eklendi" />
+    <MESSAGE value="v4 guncellemesi" />
+    <MESSAGE value="yol guncellemesi" />
+    <MESSAGE value="kesin cozum" />
+    <MESSAGE value="klasor ismi duzeltildi" />
+    <MESSAGE value="parantez hatasi kokten cozuldu" />
+    <MESSAGE value="ilk temiz yukleme" />
+    <MESSAGE value="orijinal yml akisi duzeltildi" />
+    <MESSAGE value="pyinstaller komutu sadelestirildi" />
+    <option name="LAST_COMMIT_MESSAGE" value="pyinstaller komutu sadelestirildi" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/sales_forecasting_zey_$main.coverage" NAME="main Coverage Results" MODIFIED="1783085663575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sales_forecasting(zey)" />
+  </component>
+</project>
