@@ -25,7 +25,7 @@ jobs:
 
     - name: Exe Dosyasini Olustur
       run: |
-        pyinstaller --onefile --copy-metadata streamlit app.py
+        pyinstaller --onefile --copy-metadata streamlit "sales_forecasting(zey)/app.py"
 
     - name: Exe Dosyasini GitHub'a Yukle
       uses: actions/upload-artifact@v4
