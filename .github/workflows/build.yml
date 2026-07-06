@@ -28,7 +28,7 @@ jobs:
         pyinstaller --onefile --copy-metadata streamlit app.py
 
     - name: Exe Dosyasini GitHub'a Yukle
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Sales-Forecast-App
         path: dist/app.exe
